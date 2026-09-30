@@ -1,0 +1,9 @@
+venv/
+__pycache__/
+*.pyc
+.dvc/cache
+.dvc/tmp/
+.dvc/config.local
+client_secret*.json
+*credentials*.json
+.ipynb_checkpoints/
