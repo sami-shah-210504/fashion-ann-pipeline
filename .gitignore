@@ -7,4 +7,3 @@ __pycache__/
 client_secret*.json
 *credentials*.json
 .ipynb_checkpoints/
-/models
