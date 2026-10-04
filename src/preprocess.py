@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 
 
 def normalize(x):
-    return x.astype("float32") / 255.0
+    return x.astype("float32") / 255.0 * 2.0 - 1.0
 
 
 def main():
