@@ -31,6 +31,7 @@ def main():
         validation_data=(val["x"], val["y"]),
         epochs=p["epochs"],
         batch_size=p["batch_size"],
+        verbose=2,
     )
 
     os.makedirs("models", exist_ok=True)
