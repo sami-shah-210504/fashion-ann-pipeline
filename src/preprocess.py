@@ -4,8 +4,12 @@ import yaml
 from sklearn.model_selection import train_test_split
 
 
+MEAN, STD = 0.2860, 0.3530  # Fashion-MNIST training-set statistics
+
+
 def normalize(x):
-    return (x.astype("float32") / 255.0 - 0.2860) / 0.3530
+    x = x.astype("float32") / 255.0  # scale pixels to [0, 1]
+    return (x - MEAN) / STD  # then standardize (zero mean, unit variance)
 
 
 def main():
